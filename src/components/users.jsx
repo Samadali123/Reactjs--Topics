@@ -41,7 +41,7 @@ const TotalUsers  =  [
 
 const Users = () => {
   return (
-    <div>
+    <div className='w-full  mt-4 '>
         <h1 className='mb-4'>Array Loading</h1>
     {names.map((elem, index)=> <ul><li> My name is : {elem}</li></ul>)}
 

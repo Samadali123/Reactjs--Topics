@@ -5,6 +5,7 @@ import Footer from "./components/footer"
 import Card from "./components/card"
 import Conditional from './components/conditional'
 import Users from './components/users'
+import Updatearr from './components/updatearr'
 
  
 
@@ -20,10 +21,12 @@ const App = () => {
   
   return (
     <>
-     <div className='w-[100vw] flex flex-col items-center justify-center '>
+     <div className='w-[100vw] h-screen bg-zinc-950 text-white flex flex-col items-center justify-center text-center '>
 
-      <Users/>
+      <Updatearr/>
       
+      {/* <Users/> */}
+
 
 {/* 
       <h1>Conitional rendering in react js</h1>
