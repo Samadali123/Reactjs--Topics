@@ -10,7 +10,7 @@ const Updatearr = () => {
         const val =  document.querySelector("input").value;
         document.querySelector("input").value = "";
         if(val) { setname([...name, val])
-            alert("Added Successfully.")
+            alert("Added Successfully...")
          } 
         else alert("PLease Provide The name For Add in Users")
         
@@ -31,8 +31,8 @@ const Updatearr = () => {
 
 
   return (
-    <div id='main' className='bg-white text-black py-4 px-12 rounded-lg  h-[90vh] overflow-x-hidden overflow-y-auto '>
-        <h2 className='text-red-600 mb-3 '>{name.length >0 ? "Total Users":"No users found"}</h2>
+    <div id='main' className='bg-white text-black py-4 px-12 rounded-lg h-fit overflow-x-hidden overflow-y-auto '>
+        <h2 className='text-red-600 mb-3 font-semibold text-3xl '>{name.length >0 ? "My Users":"No users found"}</h2>
      {
      name.map((elem, index)=> <><div className='flex flex-col gap-3  justify-between'>{<ol><li key={index} >{elem}</li></ol>} <button
      onClick={() => deleteName(index)}
