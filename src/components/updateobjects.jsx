@@ -13,11 +13,11 @@ const updateobjects = () => {
 
      setperson({
         ...person,
-        Name: nameval,
-        age: ageval,
-        Profession: professionval
+        Name: nameval || person.Name,
+        age: ageval || person.age,
+        Profession: professionval || person.Profession
       });
-      
+
       
       document.querySelector("#name").value = "";
       document.querySelector("#age").value = "";
@@ -28,7 +28,7 @@ const updateobjects = () => {
     }
 
 
-    
+
   return (
     <div>
         <ol>
@@ -39,9 +39,9 @@ const updateobjects = () => {
 
              <form onSubmit={submitHandler} action="" >
               <div className='flex gap-2 pt-3 text-black '>
-                <input id='name' type="text" placeholder='Enter your Name' />
-                <input id='age'  type="number" placeholder='Enter your age' />
-                <input  id='profession' type="text" placeholder='Enter your profession' />
+                <input required id='name' type="text" placeholder='Enter your Name' />
+                <input required id='age'  type="number" placeholder='Enter your age' />
+                <input required id='profession' type="text" placeholder='Enter your profession' />
                 </div>
                 <input className='mt-2 bg-red-600 rounded-2xl px-3 py-1 ' type="submit"  value="Update Details"/>
              </form>

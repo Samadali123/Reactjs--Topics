@@ -7,6 +7,7 @@ import Conditional from './components/conditional'
 import Users from './components/users'
 import Updatearr from './components/updatearr'
 import Updateobject from './components/updateobjects'
+import UpdateArrayofobjects from './components/updateArrayofobjects'
 
 
  
@@ -20,13 +21,17 @@ const App = () => {
 
   let age = 15;
 
-  
+
+
   return (
     <>
-     <div className='w-[100vw] h-screen bg-zinc-950 text-white flex flex-col items-center justify-center text-center '>
-
-      <Updateobject/>
+     <div className='w-[100vw] h-screen overflow-x-hidden overflow-y-auto bg-zinc-950 text-white flex justify-center flex-wrap  p-6 '>
       
+      <UpdateArrayofobjects/>
+
+    
+      {/* <Updateobject/> */}
+
         
       {/* <Updatearr/> */}
       
