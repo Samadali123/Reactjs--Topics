@@ -6,6 +6,8 @@ import Card from "./components/card"
 import Conditional from './components/conditional'
 import Users from './components/users'
 import Updatearr from './components/updatearr'
+import Updateobject from './components/updateobjects'
+
 
  
 
@@ -23,7 +25,10 @@ const App = () => {
     <>
      <div className='w-[100vw] h-screen bg-zinc-950 text-white flex flex-col items-center justify-center text-center '>
 
-      <Updatearr/>
+      <Updateobject/>
+      
+        
+      {/* <Updatearr/> */}
       
       {/* <Users/> */}
 
