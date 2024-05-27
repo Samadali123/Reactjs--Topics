@@ -6,12 +6,7 @@ import Card from "../components/userCard"
 
  const updateArrayofobjects = () => {
 
-    const [user,setuser] = useState( [
-       
-              
-      ]);
-
-
+    const [user,setuser] = useState([]);
       const submitHandler = (e)=>{
         e.preventDefault();
         const usernameval = document.querySelector("#username").value;

@@ -8,6 +8,7 @@ import Users from './components/users'
 import Updatearr from './components/updatearr'
 import Updateobject from './components/updateobjects'
 import UpdateArrayofobjects from './components/updateArrayofobjects'
+import TwoWayBinding from './components/twoway'
 
 
  
@@ -26,8 +27,8 @@ const App = () => {
   return (
     <>
      <div className='w-[100vw] h-screen overflow-x-hidden overflow-y-auto bg-zinc-950 text-white flex justify-center flex-wrap  p-6 '>
-      
-      <UpdateArrayofobjects/>
+      <TwoWayBinding/>
+      {/* <UpdateArrayofobjects/> */}
 
     
       {/* <Updateobject/> */}
