@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Navbar from "./components/navbar"
 import Content from './components/content'
 import Footer from "./components/footer"
@@ -9,28 +9,37 @@ import Updatearr from './components/updatearr'
 import Updateobject from './components/updateobjects'
 import UpdateArrayofobjects from './components/updateArrayofobjects'
 import TwoWayBinding from './components/twoway'
-
-
+import Ref from "./components/ref"
+import Cards from './components/data'
  
 
+
+
 const App = () => {
+
   const  [age1, setage1] = useState(0);
   const  [age2, setage2] = useState(0);
   const  [age3, setage3] = useState(0);
   const  [age4, setage4] = useState(0);
   const  [age5, setage5] = useState(0);
-
   let age = 15;
+
 
 
 
   return (
     <>
      <div className='w-[100vw] h-screen overflow-x-hidden overflow-y-auto bg-zinc-950 text-white flex justify-center flex-wrap  p-6 '>
-      <TwoWayBinding/>
+
+     <Cards/>
+     
+    
+      {/* <Ref/> */}
+
+      {/* <TwoWayBinding/> */}
+      
       {/* <UpdateArrayofobjects/> */}
 
-    
       {/* <Updateobject/> */}
 
         
