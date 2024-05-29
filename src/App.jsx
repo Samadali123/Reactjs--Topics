@@ -11,9 +11,14 @@ import UpdateArrayofobjects from './components/updateArrayofobjects'
 import TwoWayBinding from './components/twoway'
 import Ref from "./components/ref"
 import Cards from './components/data'
+import axios from './utils/axios'
+import USERS from "./components/newcards"
+
+
+
+
+
  
-
-
 
 const App = () => {
 
@@ -24,33 +29,61 @@ const App = () => {
   const  [age5, setage5] = useState(0);
   let age = 15;
 
+    // const getusers = async ()=>{
+    //   // use axios through then catch
+
+    //   //  const users = axios.get("https://jsonplaceholder.typicode.com/users").then(function(res){
+    //   //   console.log(res.data)
+    //   //  }).catch(function(error){
+    //   //   console.log(error)
+    //   //  })
+      
+
+    //   try {
+    //     const {data} = await  axios.get("/users")
+    //     console.log(data)
+    //   } catch (error) {
+    //     console.error(error)
+    //   }
+    
+    // }
+
 
 
 
   return (
     <>
      <div className='w-[100vw] h-screen overflow-x-hidden overflow-y-auto bg-zinc-950 text-white flex justify-center flex-wrap  p-6 '>
+       <USERS/>
+       
+       {/* <button className='px-4 py-1 rounded-lg bg-orange-600 text-white' onClick={getusers}>Get users</button> */}
+      
 
-     <Cards/>
+        
+     {/* <Cards/> */}
      
     
       {/* <Ref/> */}
 
+
       {/* <TwoWayBinding/> */}
       
       {/* <UpdateArrayofobjects/> */}
+
 
       {/* <Updateobject/> */}
 
         
       {/* <Updatearr/> */}
       
+     
       {/* <Users/> */}
 
 
 {/* 
       <h1>Conitional rendering in react js</h1>
       <Conditional  age={age} /> */}
+
 
 {/* 
      <Card  name="Ahsan Ahemd" age={age1} setage={setage1} image="https://images.unsplash.com/photo-1715412406818-48241c841c9e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
