@@ -13,6 +13,9 @@ import Ref from "./components/ref"
 import Cards from './components/data'
 import axios from './utils/axios'
 import USERS from "./components/newcards"
+import Useeffect from "./components/useeffect"
+import Miniproject from "./components/miniproject"
+
 
 
 
@@ -54,7 +57,12 @@ const App = () => {
   return (
     <>
      <div className='w-[100vw] h-screen overflow-x-hidden overflow-y-auto bg-zinc-950 text-white flex justify-center flex-wrap  p-6 '>
-       <USERS/>
+      
+       <Miniproject/>
+
+       {/* <Useeffect/>             */}
+
+       {/* <USERS/> */}
        
        {/* <button className='px-4 py-1 rounded-lg bg-orange-600 text-white' onClick={getusers}>Get users</button> */}
       
