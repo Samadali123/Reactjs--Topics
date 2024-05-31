@@ -14,7 +14,7 @@ const card = ({name, age, image, setage}) => {
      <div className="dets px-3 py-3">
      <h3>{name}</h3>
     <p>{age}</p>
-    <input className='px-2 py-1 w-20 rounded-md text-black' type="text" placeholder='Enter your age' />
+    <input  className='px-2 py-1 w-20 rounded-md text-black' type="text" placeholder='Enter your age' />
     <Button name={name} age={age} setage={setage} />
      </div>
     

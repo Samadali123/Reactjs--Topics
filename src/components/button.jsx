@@ -1,10 +1,11 @@
+import { Input } from 'postcss'
 import React from 'react'
 
 
 const button = ({name, age, setage}) => {
    
     const editage = ()=>{
-          setage(21)
+          setage(document.querySelector("input").value)
     } 
 
   return (

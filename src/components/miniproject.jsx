@@ -7,7 +7,7 @@ const Miniproject = () => {
 
     const GetUsers = async () => {
         try {
-            const { data } = await axios.get(`https://picsum.photos/v2/list?page=${page}&limit=4`);
+            const { data } = await axios.get(`https://picsum.photos/v2/list?page=${page}&limit=12`);
             setImages(data);
         } catch (error) {
             console.error(error);
